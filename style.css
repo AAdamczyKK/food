@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(45deg, rgba(255, 255, 0, 0.6), rgba(255, 0, 0, 0.7));
+}
+
+.column {
+  float: left;
+  width: 41%;
+  padding: 5px;
+  margin-left:70px;
+  margin-right: 50px;
+
+}
+
+/* Clearfix (clear floats) */
+.row: after {
+  content: "";
+  clear: both;
+  display: inline-flex;
+
+}
+
+img {
+  height: 400px;
+  position: cover;
+  transform: scale(1);
+  transition: transform 0.5s;
+  object-fit: cover;
+  box-shadow: 0 0 48px 2px rgba(0, 0, 0, 0.7);
+  border: solid 3px rgba(255, 255, 255, 0.9);
+}
+
+
+.column img:focus {
+    border: solid 5px rgb(78, 76, 226);
+}
+
+
+
+img:hover {
+  transform: scale(1.2);
+}
+
+h2, p {
+  font-family: Cambria Math;
+  font-size: 2rem;
+  text-align: center;
+}
+
